@@ -1,0 +1,25 @@
+{
+  "name": "ModuleJS",
+  "version": "0.0.0",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "authors": [
+    "LC"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "1.11.*",
+    "requirejs": "~2.1.20"
+  }
+}

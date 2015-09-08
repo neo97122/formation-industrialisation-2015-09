@@ -1,0 +1,17 @@
+{
+  "name": "ModuleJS",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "bootstrap": "3.3.*",
+    "requirejs": "2.1.*",
+    "jquery": "2.1.*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
