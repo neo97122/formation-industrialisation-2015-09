@@ -8,6 +8,16 @@ module.exports = function(grunt) {
 
 
     grunt.initConfig({
+        watch: {
+            less: {
+                files: ['less/*.less'],
+                tasks: ['less-autoprefix'],
+            },
+            typescript: {
+                files: ['ts/*.ts'],
+                tasks: ['typescript'],
+            },
+        },
         /* Génération de css à partir de less */
         less: {
             dev: {
@@ -21,6 +31,25 @@ module.exports = function(grunt) {
             },
         },
 
+
+        typescript: {
+            dev: {
+                src: ['ts/*.ts'],
+                dest: 'js',
+                files: [{
+                    expand: true,
+                    cwd: 'ts',
+                    src: ['*.ts'],
+                    dest: 'js/',
+                    ext: '.js'
+                }],
+                options: {
+                    module: 'amd', //or commonjs
+                    target: 'es5', //or es3
+                    sourceMap: true,
+                }
+            }
+        },
 
         autoprefixer: {
             options: {
